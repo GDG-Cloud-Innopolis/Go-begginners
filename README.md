@@ -8,7 +8,7 @@
 
 ## План курса
 
-1. Занятие
+1. Занятие([слайды](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.0.0/Go.Beginners.Innopolis.pdf))
     * Приступая к работе
     * Ваша первая программа
     * Типы
