@@ -8,12 +8,16 @@
 
 ## План курса
 
-1. Занятие([слайды](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.0.0/Go.Beginners.Innopolis.pdf))
-    * Приступая к работе
-    * Ваша первая программа
-    * Типы
-    * Переменные
-2. Занятие
+### Занятие 1. 
+[Открывающие слайды]()  
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.0.0/Go.Beginners.Innopolis.pdf)  
+[Ссылка на домашнее задание]()  
+[Форма для сдачи домашнего задания]()  
+    * Приступая к работе  
+    * Ваша первая программа  
+    * Типы  
+    * Переменные  
+1. Занятие
     * Управление потоком
     * Массивы, срезы, карты
 3. Занятие
@@ -30,11 +34,11 @@
     * Дальнейшие шаги
 
 ## Преподаватели
-Эмиль @litleleprikon
-Алик @alikhil
-Искандер @quasilyte
+Эмиль [@litleleprikon](@litleleprikon)  
+Алик [@alikhil](@alikhil)  
+Искандер [@quasilyte](@quasilyte)  
 
 ## Организация
-Оля @luzhajka
-Раис @rais_khadeev
-Кирилл @kirilldemtchenko
+Оля [@luzhajka](@luzhajka)  
+Раис [@rais_khadeev](@rais_khadeev)  
+Кирилл [@kirilldemtchenko](@kirilldemtchenko)  
