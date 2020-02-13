@@ -23,6 +23,12 @@
   * Переменные  
 
 ## Занятие 2
+#### Материалы
+[Открывающие слайды](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.1.0/Keyword2.pdf)  
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.1.0/Go.Beginners.Innopolis.2.pdf)  
+[Ссылка на домашнее задание](https://play.golang.org/p/UeZfvGzBTUb)  
+[Ссылка на домашнее задание со звёздочкой](https://play.golang.org/p/hlwxQM0rHmX)  
+[Форма для сдачи домашнего задания](https://forms.gle/T3epCmce9UssFWPo9)  
 #### Содержание
   * Управление потоком
   * Массивы, срезы, карты
@@ -58,6 +64,7 @@
 
 #### Tips & Tricks. Пакеты и повторное использование кода
 Вячеслав Бобик (Разработчик, юнит Messenger, Авито)
+Сергей Иваненко (Авито)
 
 Именование пакетов
  - В чем смысл пакета
