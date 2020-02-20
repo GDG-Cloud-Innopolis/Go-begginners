@@ -10,7 +10,7 @@
 
 # План курса
 
-## Занятие 1
+## [Занятие 1](https://www.meetup.com/GDG-Cloud-Innopolis/events/ldbnnrybcdbjb/)
 #### Материалы
 [Открывающие слайды](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.0.0/keyword-go.pdf)  
 [Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.0.0/Go.Beginners.Innopolis.pdf)  
@@ -22,7 +22,7 @@
   * Типы  
   * Переменные  
 
-## Занятие 2
+## [Занятие 2](https://www.meetup.com/GDG-Cloud-Innopolis/events/268532521/)
 #### Материалы
 [Открывающие слайды](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.1.0/Keyword2.pdf)  
 [Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.1.0/Go.Beginners.Innopolis.2.pdf)  
@@ -33,7 +33,7 @@
   * Управление потоком
   * Массивы, срезы, карты
 
-## Занятие 3
+## [Занятие 3](https://www.meetup.com/GDG-Cloud-Innopolis/events/268773574/)
 #### Содержание
   * Функции
   * Указатели
@@ -44,7 +44,7 @@
   * Многопоточность
 
 #### Tips & Tricks
-Никита Кондратьев (Разработчик, юнит SafeDeal, Авито)
+**Никита Кондратьев (Разработчик, юнит SafeDeal, Авито)**
 
 1. Принимайте интерфейсы, возвращайте структуры.
 2. В Go отсутствует наследование как в ООП. Используйте интерфейсы.
@@ -63,9 +63,7 @@
   * Тестирование
 
 #### Tips & Tricks. Пакеты и повторное использование кода
-Вячеслав Бобик (Разработчик, юнит Messenger, Авито)
-Сергей Иваненко (Авито)
-
+**Вячеслав Бобик (Разработчик, юнит Messenger, Авито)**  
 Именование пакетов
  - В чем смысл пакета
  - Примеры из стандартной библиотеки
@@ -80,12 +78,25 @@
    - Где черпать вдохновение: пример на репозиторий go-package-layout
    - Луше маленькая копипаста, чем зависимость.
 
+**Сергей Иваненко (Support Systems developer, Avito)**  
+Рассмотрены будут примеры unit тестинга простых ф-ий, файлов, http клиентов, sql запросов. Будет проиллиюстированно как стороннипакеты(facker, mockery, spf13/afero) помогают в этом вопросе, поговорим о внедрении зависимостей и как это помогает при тестировании.  
+Встроенные инструменты code coverace, benchmark.
+
+План:
+ - unit testing табличне тесты, просто тесты, приватные функции    Примеры File, websocket, httpClient, etc
+ - вспомогательные инстурменты (facker, mockery)
+ - TDD
+ - Слоеная архитектура (циклическая зависимость) +/- различных подходов размещения unit_tests
+ - code coverace
+ - code race condition, parrallel
+ - benchmark
+
 ## Занятие 6
 #### Содержание
   * Стандартная библиотека
   * Дальнейшие шаги
 
-#### Tips & Tricks. Пакеты и повторное использование кода
+#### Tips & Tricks. Стандартная библиотека.
 Иван Осадчий (Разрабочтик, юнит Monetization, Авито)
 
   - Идеология: какой задумывалась Go stdlib
@@ -104,10 +115,10 @@
 Искандер [@quasilyte](https://tttttt.me/quasilyte)  
 
 ## Tips & Tricks
-Вячеслав Бобик [Avito]()  
-Никита Кондратьев [Avito]()  
-Иван Осадчий [Avito]()  
-Сергей Иваненко [Avito]()  
+Вячеслав Бобик [Avito](https://tttttt.me/victor3)  
+Никита Кондратьев [Avito](https://tttttt.me/nskondratev)  
+Иван Осадчий [Avito](https://tttttt.me/ivan_os)  
+Сергей Иваненко [Avito](https://tttttt.me/SergeyWh1te)  
 
 ## Организация
 Оля [@luzhajka](https://tttttt.me/luzhajka)  
