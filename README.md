@@ -34,6 +34,10 @@
   * Массивы, срезы, карты
 
 ## [Занятие 3](https://www.meetup.com/GDG-Cloud-Innopolis/events/268773574/)
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.2.0/Go.Beginners.Innopolis.3.pdf)  
+[Ссылка на домашнее задание](https://play.golang.org/p/G6YMZMHnotU)  
+[Ссылка на домашнее задание со звёздочкой](https://play.golang.org/p/wpefmNMZQWL)  
+[Форма для сдачи домашнего задания](https://forms.gle/AcUQ9zH3BPtPoLoN6)  
 #### Содержание
   * Функции
   * Указатели
@@ -124,3 +128,4 @@
 Оля [@luzhajka](https://tttttt.me/luzhajka)  
 Раис [@rais_khadeev](https://tttttt.me/rais_khadeev)  
 Кирилл [@kirilldemtchenko](https://tttttt.me/kirilldemtchenko)  
+Миша [@oldtuna](https://tttttt.me/oldtuna)
