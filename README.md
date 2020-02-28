@@ -42,7 +42,11 @@
   * Функции
   * Указатели
 
-## Занятие 4
+## [Занятие 4](https://www.meetup.com/GDG-Cloud-Innopolis/events/268974970/)
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.3.0/Go.Beginners.Innopolis.4.pdf)   
+[Ссылка на домашнее задание](https://play.golang.org/p/QeTIqPp3tbF)  
+[Форма для сдачи домашнего задания](https://forms.gle/eA5htEBiQ9AVeCy78)  
+[*Никита Кондратьев* - Tips & Tricks](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.3.0/Tips_Tricks.pdf)  
 #### Содержание
   * Структуры и интерфейсы
   * Многопоточность
