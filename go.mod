@@ -1,3 +1,3 @@
 module github.com/GDG-Cloud-Innopolis/Go-begginners
 
-go 1.13
+go 1.14
