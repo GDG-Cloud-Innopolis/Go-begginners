@@ -65,7 +65,13 @@
 9. Держите в голове, что encoding/json может работать только с "публичными" полями структур.
 10. Учитывайте, что тип и указатель на тип имеют разные наборы методов.
 
-## Занятие 5
+## [Занятие 5](https://www.meetup.com/GDG-Cloud-Innopolis/events/269128333/)
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.4.0/Go.Beginners.Innopolis.5.pdf)   
+[Ссылка на домашнее задание](https://play.golang.org/p/_6SP-Dj79fY)  
+[Форма для сдачи домашнего задания](https://forms.gle/pYfUzci4FMuPv8pb7)  
+[*Вячеслав Бобик* - Tips & Tricks](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.4.0/package-naming-and-structuring.pdf)  
+[*Сергей Иваненко* - Tips & Tricks](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.4.0/Unit.Go.Tips.and.Trics.pptx.pdf)  
+
 #### Содержание
   * Пакеты и повторное использование кода
   * Тестирование
