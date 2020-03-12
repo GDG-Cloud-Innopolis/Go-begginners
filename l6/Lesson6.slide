@@ -1,0 +1,182 @@
+Go Beginners Innopolis 
+Занятие 6: Стандартная библиотека, Дальнейшие шаги
+12 Mar 2020
+Tags: go, innopolis
+
+Emil Sharifullin
+Senior Software Engineer, SKB Kontur
+iam@litleleprikon.me
+@litleleprikon
+
+* В прошлых сериях
+
+- Как указать название пакета?
+- Какие элемменты пакета могут быть использованы вне пакета?
+- Как создать модуль?
+- Как определить тест?
+- Как определить бенчмарк?
+- Как определить подтест в рамках теста?
+
+* Стандартная библиотека
+
+* Строки
+
+.play src/stdlib/strings/first/main.go /START/,/END/
+
+* Конверсия строк
+
+.play src/stdlib/strings/second/main.go
+
+* Ввод / Вывод
+
+.link https://habr.com/en/post/306914/
+
+Прежде чем мы перейдем к работе с файлами, нужно узнать про пакет io. Пакет io состоит из нескольких функций, но в основном, это интерфейсы, используемые в других пакетах. Два основных интерфейса — это Reader и Writer. Reader занимается чтением с помощью метода Read. Writer занимается записью с помощью метода Write. Многие функции принимают в качестве аргумента Reader или Writer. Например, пакет io содержит функцию Copy, которая копирует данные из Reader во Writer:
+
+    func Copy(dst Writer, src Reader) (written int64, err error)
+
+* Ввод / Вывод
+
+Чтобы прочитать или записать []byte или string, можно использовать структуру Buffer из пакета bytes:
+
+    var buf bytes.Buffer
+    buf.Write([]byte("test"))
+
+Buffer не требует инициализации и поддерживает интерфейсы Reader и Writer. Вы можете конвертировать его в []byte вызвав buf.Bytes(). Если нужно только читать строки, можно так же использовать функцию strings.NewReader(), которая более эффективна, чем чтение в буфер
+
+* Файлы и папки
+
+.play src/stdlib/files/first/main.go /START/,/END/
+
+* Чтение файлов
+
+.play src/stdlib/files/second/main.go
+
+* Запись файлов
+
+.play src/stdlib/files/third/main.go
+
+* Поиск в каталоге
+
+Чтобы получить содержимое каталога, мы используем тот же os.Open(), но передаём ему путь к каталогу вместо имени файла. Затем вызывается функция Readdir:
+
+.play src/stdlib/files/fourth/main.go /START/,/END/
+
+* Поиск в каталоге
+
+Иногда мы хотим рекурсивно обойти каталоги (прочитать содержимое текущего и всех вложенных каталогов). Это делается просто с помощью функции Walk, предоставляемой пакетом path/filepath:
+
+.play src/stdlib/files/fifth/main.go
+
+* Ошибки
+
+Go имеет встроенный тип для сообщений об ошибках, который мы уже рассматривали (тип error). Мы можем создать свои собственные типы сообщений об ошибках используя функцию New из пакета errors.
+
+.play src/stdlib/errors/first/main.go
+
+* Контейнеры и сортировки
+
+* Список
+
+Пакет container/list реализует двусвязный список. Структура типа данных связного списка выглядит следующим образом:
+
+.play src/stdlib/containers/list/first/main.go
+
+* Сортировка
+
+Пакет sort содержит функции для сортировки произвольных данных. Есть несколько предопределённых функций (для срезов, целочисленных значений и чисел с плавающей точкой). Вот пример, как отсортировать ваши данные:
+
+.code src/stdlib/containers/sort/first/main.go /START FIRST/,/END FIRST/
+
+* Сортировка
+
+.play src/stdlib/containers/sort/first/main.go /START SECOND/,/END SECOND/
+
+* Хэши и криптография
+
+Функция хэширования принимает набор данных и уменьшает его до фиксированного размера. Хэши используются в программировании повсеместно, начиная от поиска данных, заканчивая быстрым детектированием изменений. Хэш-функции в Go подразделяются на две категории: криптографические и некриптографические.
+
+* Хэши и криптография
+
+Некриптографические функции можно найти в пакете hash, который включает такие алгоритмы как adler32, crc32, crc64 и fnv. Вот пример использования crc32:
+
+.play src/stdlib/hashes/first/main.go
+
+Объект crc32 реализует интерфейс Writer, так что мы можем просто записать в него набор байт, как и в любой другой Writer. После записи мы вызываем Sum32(), который вернёт uint32.
+
+* Хэши и криптография
+
+Обычным применением crc32 является сравнение двух файлов. Если значение Sum32() для обоих файлов одинаковы, то, весьма вероятно (не со стопроцентной гарантией), содержимое этих файлов идентично. Если же значения отличаются, значит файлы, безусловно, разные:
+
+.code src/stdlib/hashes/second/main.go /START FIRST/,/END FIRST/
+
+* Хэши и криптография
+
+.play src/stdlib/hashes/second/main.go /START SECOND/,/END SECOND/
+
+* Серверы
+
+* TCP сервер
+
+.code src/stdlib/servers/tcp/server/main.go /^func server/,/^}/
+
+* TCP сервер
+.code src/stdlib/servers/tcp/server/main.go /^func handleServerConnection/,/^}/
+
+* TCP сервер
+.play src/stdlib/servers/tcp/server/main.go /^func main/,/^}/
+
+* TCP клиент
+.code src/stdlib/servers/tcp/client/main.go /^func client/,/^}/
+
+* TCP клиент
+
+.play src/stdlib/servers/tcp/client/main.go /^func main/,/^}/
+
+* HTTP сервер
+
+.code src/stdlib/servers/http/server/main.go /^func hello/,/^}/
+
+.play src/stdlib/servers/http/server/main.go /^func main/,/^}/
+
+* RPC сервер
+
+.code src/stdlib/servers/rpc/server/main.go /START FIRST/,/END FIRST/
+.code src/stdlib/servers/rpc/server/main.go /START SECOND/,/END SECOND/
+
+* RPC сервер
+
+.play src/stdlib/servers/rpc/server/main.go /^func main/,/^}/
+
+* RPC клиент
+
+.code src/stdlib/servers/rpc/client/main.go /^func client/,/^}/
+.play src/stdlib/servers/rpc/client/main.go /^func main/,/^}/
+
+* Аргументы командной строки
+
+.play src/stdlib/flags/first/main.go /^func main/,/^}/
+
+    go run l6/src/stdlib/flags/first/main.go -min=2 -max=5
+    min: 2, max: 5
+
+* Синхронизация
+
+Мьютекс (или взаимная блокировка) единовременно блокирует часть кода в одном потоке, а так же используется для защиты общих ресурсов из не-атомарных операций. Вот пример использования мьютекса:
+
+.play src/stdlib/mutex/first/main.go /^func main/,/^}/
+
+* Задачка
+
+Написать веб-сервис для предоставления мьютекса
+
+- Должен использоваться контекст из стандартной библиотеки
+- Должен использоваться таймаут. Если за время таймаута мьютекс взять не получилось, то возврашать 408
+- Таймаут, хост(hostname:port) должны устанавливаться через флаги(timeout, http)
+- Запросы: POST /api/v1/lock(201), DEL /api/v1/lock(200)
+
+* Решение
+
+.link https://forms.gle/b3vD8FEhc1JKkYJ29
+
+.image img/qrcode-7.svg 500 _
