@@ -105,7 +105,11 @@
  - code race condition, parrallel
  - benchmark
 
-## Занятие 6
+## [Занятие 6](https://www.meetup.com/GDG-Cloud-Innopolis/events/269298234)
+[Слайды урока](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.5.0/Go.Beginners.Innopolis.6.pdf)    
+[Форма для сдачи домашнего задания](https://forms.gle/b3vD8FEhc1JKkYJ29)  
+[*Иван Осадчий* - Tips & Tricks](https://github.com/GDG-Cloud-Innopolis/Go-begginners/releases/download/v1.5.0/Go.Standard.Library.pdf)  
+
 #### Содержание
   * Стандартная библиотека
   * Дальнейшие шаги
